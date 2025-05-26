@@ -61,7 +61,7 @@ def train():
         mask_decoder.load_state_dict(checkpoint['mask_decoder'])
         optimizer.load_state_dict(checkpoint['optimizer'])
         start_epoch = checkpoint['epoch']
-        print(f"✅ Resumed training from epoch {start_epoch}")
+        print(f" Resumed training from epoch {start_epoch}")
 
     for epoch in range(start_epoch, start_epoch + 20):
         image_encoder.train()
